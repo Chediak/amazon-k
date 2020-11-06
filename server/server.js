@@ -22,12 +22,12 @@ mongoose.connect(
         if (err) {
             console.log(err);
         } else {
-            console.log("Connect to the database");
+            console.log("Connected to the database");
         }
     }
 );
 
-// Middleware 
+// Middleware
 app.use(cors());
 app.use(morgan('dev'));
 app.use(bodyParser.json());

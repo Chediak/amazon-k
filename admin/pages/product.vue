@@ -37,7 +37,7 @@
                 <select class="a-select-option" v-model="ownerID">
                   <option value="Bronze">Bronze</option>
                   <option value="Prata">Prata</option>
-                  <option value="#Ouro">#Ouro</option>
+                  <option value="Ouro">Ouro</option>
                   <option
                     v-for="owner in owners"
                     :value="owner._id"
@@ -107,7 +107,7 @@
               <div class="a-spacing-top-large">
                 <span class="a-button-register">
                   <span class="a-button-inner">
-                    <span class="a-button-text" @click="onAddProduct">Add Product</span>
+                    <span class="a-button-text" @click="onAddProduct">Adicionar Produto</span>
                   </span>
                 </span>
               </div>
@@ -155,6 +155,7 @@ export default {
       fileName: ""
     };
   },
+  
   methods: {
     onFileSelected(event) {
       this.selectedFile = event.target.files[0];
