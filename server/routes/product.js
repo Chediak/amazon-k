@@ -26,7 +26,6 @@ router.post("/products", async (req, res) => {
     }
 });
 
-
 //GET request - get all products
 router.get('/products', async (req, res) => {
     try {

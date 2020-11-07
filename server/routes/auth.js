@@ -8,7 +8,7 @@ const jwt = require('jsonwebtoken');
 router.post('/auth/signup', async (req, res) => {
     if (!req.body.email || !req.body.password) {
         res.json({
-            success: false,
+            success: false, 
             message: "Please enter email or password"
         });
     } else {
